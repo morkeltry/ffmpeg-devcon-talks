@@ -1,0 +1,9 @@
+.env
+
+node_modules
+
+llm_failures.json
+llm_results.json
+
+*.mp4
+Devcon schedule and recordings
