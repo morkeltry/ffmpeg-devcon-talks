@@ -1,11 +1,16 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import process from 'node:process';
+import https from 'https';
+import fetch from 'node-fetch';   // needed for agent.rejectUnauthorized to work as expected
+import { URL } from 'url';
 import 'dotenv/config';
 
 const apiUrl = process.env.API_URL;
+const API_KEY = process.env.API_KEY; 
 const model = process.env.MODEL;
-
+const urlObj = new URL(apiUrl);
+urlObj.protocol = (urlObj.port === '11434') ? 'http:' : 'https:';
 
 // Add hardcoded input path here if you want
 const inputPath = process.argv[2] || '';
@@ -19,16 +24,27 @@ Maintain case sensitivity.
 const storage = {};
 const failures = [];
 
-async function doQuery(prompt) {
-  const response = await fetch(apiUrl, {
+
+const httpsAgent = new https.Agent({
+  rejectUnauthorized: !(['localhost','127.0.0.1'].includes(urlObj.hostname)),
+});
+if (!httpsAgent.options.rejectUnauthorized)
+  console.log('localhost mode - SSL certificate failures will not prevent fetch');
+
+async function doQuery(prompt) {  
+  const response = await fetch(urlObj, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    headers: {
+      'Content-Type': 'application/json',
+      'x-api-key': API_KEY,
+    },
     body: JSON.stringify({
       model,
       prompt,
       format: 'json',
       stream: false,
     }),
+    agent: httpsAgent,
   });
 
   const resData = await response.json();
@@ -147,6 +163,7 @@ async function processContent(content, defaultCategory, queue) {
         if (!storage[parsed.stage]) storage[parsed.stage] = [];
         storage[parsed.stage].push(parsed);
       } catch (e) {
+        console.log(e);        
         failures.push({ query: section, error: String(e), response: e.response, responseJson: e.responseJson });
         console.log("Failure on section:\n", section, "\nError/Response:\n", (e.message || e), "\n");
       }
