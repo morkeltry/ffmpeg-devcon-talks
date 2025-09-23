@@ -1,7 +1,10 @@
 import path from 'path';
 const basePath = "~/Downloads/devcon";
 
-import { files, day1 } from "./data.mjs";
+import { files, day2 } from "./data.mjs";
+let day = 'day2';
+let target = day2;
+
 
 const minsToSecs = mmmColonSs => {
     const [mins, secs] = mmmColonSs.split(':');
@@ -58,19 +61,16 @@ return slices.map((slice) => {
       category: 'Example'
     }
   ];
-  
-
-  let day = 'day1';
-  let target=day1;
-
 
   Object.keys(target)
   .forEach(stage => {
-    target[stage].forEach(talk => {
-        if (!talk.startSecs && talk.startInMins)
-          talk.startSecs = minsToSecs(talk.startInMins);
-        if (!talk.endSecs && talk.endInMins)
-          talk.endSecs = minsToSecs(talk.endInMins);
+    target[stage]
+      .filter(talk => Boolean(!talk.indexingFail))
+      .forEach(talk => {
+        if (!talk.startSecs && talk.startTimeInMins)
+          talk.startSecs = minsToSecs(talk.startTimeInMins);
+        if (!talk.endSecs && talk.endTimeInMins)
+          talk.endSecs = minsToSecs(talk.endTimeInMins);
 
         if (!talk.startSecs || !talk.endSecs) {
             console.log({ talk });
@@ -91,8 +91,8 @@ return slices.map((slice) => {
   Object.keys(target)
     .forEach(stage => {      
         // do not escape input filename, if we can enclose it in quotes (cannot do so if using ~)
-        // const inputFile = path.join(basePath, files[day][stage]);
-        const inputFile = path.join(basePath, escapeStringforBash(files[day][stage]));
+        // const inputFile = path.join(basePath, files[day][stage]);        
+        const inputFile = path.join(basePath, escapeStringforBash(files[day][stage.replace(' ','')]));
         console.log(generateFFmpegCommands(target[stage], inputFile), '&&');  
 
     })
