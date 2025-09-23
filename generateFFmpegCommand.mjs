@@ -1,7 +1,7 @@
 import path from 'path';
 const basePath = "~/Downloads/devcon";
 
-import { files, day1 } from "./data.js";
+import { files, day1 } from "./data.mjs";
 
 const minsToSecs = mmmColonSs => {
     const [mins, secs] = mmmColonSs.split(':');
@@ -67,7 +67,11 @@ return slices.map((slice) => {
   Object.keys(target)
   .forEach(stage => {
     target[stage].forEach(talk => {
-        talk.endSecs = minsToSecs(talk.endInMins)
+        if (!talk.startSecs && talk.startInMins)
+          talk.startSecs = minsToSecs(talk.startInMins);
+        if (!talk.endSecs && talk.endInMins)
+          talk.endSecs = minsToSecs(talk.endInMins);
+
         if (!talk.startSecs || !talk.endSecs) {
             console.log({ talk });
             throw new Error ("missing start/ end time");
