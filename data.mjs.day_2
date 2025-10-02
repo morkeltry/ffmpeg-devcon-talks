@@ -17,7 +17,7 @@ const files = {
       "Stage6": "Devcon SEA ｜ Stage 6 - Day 1 [YeUgxdhkXqY].mp4"
     },
     "day2": {
-      "Breakout1": "Devcon SEA ｜ Breakout 1 - Day 2 [uIsCaqDRQqI].mp4",
+      "Breakout1": "Devcon SEA ｜ Breakout 1 - Day 2 [CH13V8pRzSk].mp4",
       "Breakout3": "Devcon SEA ｜ Breakout 3 - Day 2 [n0WwuAUCdo4].mp4",
       "ClassroomA": "Devcon SEA ｜ Classroom A - Day 2 [K5jLZJfX2a0].mp4",
       "ClassroomB": "Devcon SEA ｜ Classroom B - Day 2 [ABP72AYXX_k].mp4",
@@ -132,7 +132,7 @@ const day2 =
       startTime24hr: '11:50',
       endTime24hr: '11:57',
       startTimeInMins: "134:02",
-      endTimeInMins: "14:20",
+      endTimeInMins: "143:20",
       start: 0,
       end: 0
     },
@@ -142,7 +142,7 @@ const day2 =
       category: 'Cultures / Legal',
       startTime24hr: '13:10',
       endTime24hr: '13:17',
-      lunchBreak: true,
+      indexingFail: 'lunchBreak',
       start: 0,
       end: 0
     },
@@ -219,7 +219,7 @@ const day2 =
       startTime24hr: '16:20',
       endTime24hr: '16:27',
       startTimeInMins: "404:14",
-      endTimeInMins: "410:00",
+      endTimeInMins: "411:16",
       start: 0,
       end: 0
     },
@@ -456,7 +456,7 @@ const day2 =
       startTime24hr: '11:30',
       endTime24hr: '12:50',
       startTimeInMins: "114:53",
-      endTimeInMins: "189.26",
+      endTimeInMins: "189:26",
       start: 0,
       end: 0
     },
@@ -525,6 +525,7 @@ const day2 =
       category: 'Security and Auditing (fun and hard)',
       startTime24hr: '16:00',
       endTime24hr: '17:50',
+      indexingFail: 'cantFindIt',
       startTimeInMins: "",
       endTimeInMins: "",
       start: 0,
@@ -539,7 +540,7 @@ const day2 =
       startTime24hr: '13:30',
       endTime24hr: '13:55',
       startTimeInMins: "233:45",
-      endTimeInMins: "258:14",
+      endTimeInMins: "258:45",
       start: 0,
       end: 0
     },
@@ -571,6 +572,7 @@ const day2 =
       category: 'Products',
       startTime24hr: '15:20',
       endTime24hr: '15:45',
+      indexingFail: "Not recorded",
       startTimeInMins: "",
       endTimeInMins: "",
       start: 0,
@@ -594,7 +596,7 @@ const day2 =
       startTime24hr: '18:20',
       endTime24hr: '18:27',
       startTimeInMins: "522:03",
-      endTimeInMins: "430:17",
+      endTimeInMins: "530:17",
       start: 0,
       end: 0
     }
@@ -651,7 +653,7 @@ const day2 =
       startTime24hr: '16:00',
       endTime24hr: '16:25',
       startTimeInMins: "364:33",
-      "VideoEndsAbruptly": true,
+      indexingFail: "Video ends abruptly during session",
       endTimeInMins: "",
       start: 0,
       end: 0
@@ -664,6 +666,7 @@ const day2 =
       endTime24hr: '16:55',
       startTimeInMins: "",
       endTimeInMins: "",
+      indexingFail: "Video ends abruptly during previous session",
       start: 0,
       end: 0
     },
@@ -675,6 +678,7 @@ const day2 =
       endTime24hr: '17:25',
       startTimeInMins: "",
       endTimeInMins: "",
+      indexingFail: "Video ends abruptly during earlier session",
       start: 0,
       end: 0
     }
@@ -742,7 +746,7 @@ const day2 =
       startTime24hr: '16:00',
       endTime24hr: '16:25',
       startTimeInMins: "415:15",
-      endTimeInMins: "433:18",
+      endTimeInMins: "435:18",
       start: 0,
       end: 0
     },
@@ -753,7 +757,7 @@ const day2 =
       startTime24hr: '16:50',
       endTime24hr: '17:15',
       startTimeInMins: "436:10",
-      endTimeInMins: "760:55",
+      endTimeInMins: "460:55",
       start: 0,
       end: 0
     },
@@ -764,7 +768,7 @@ const day2 =
       startTime24hr: '18:00',
       endTime24hr: '18:25',
       startTimeInMins: "505:00",
-      endTimeInMins: "568:57",
+      endTimeInMins: "529:45",
       start: 0,
       end: 0
     }
@@ -918,21 +922,21 @@ const day2 =
       end: 0
     }
   ],
-  'Main Stage': [
+  'Mainstage': [
     {
       title: 'Building a future-proof L2',
-      stage: 'Main Stage',
+      stage: 'Mainstage',
       category: 'Cross chain, based and preconfs',
       startTime24hr: '13:00',
       endTime24hr: '13:25',
-      startTimeInMins: "205:35",
+      startTimeInMins: "204:35",
       endTimeInMins: "230:10",
       start: 0,
       end: 0
     },
     {
       title: 'Unified Ethereum vs L2 Ecosystem Competition',
-      stage: 'Main Stage',
+      stage: 'Mainstage',
       category: 'Cross chain, based and preconfs',
       startTime24hr: '13:30',
       endTime24hr: '14:25',
@@ -943,7 +947,7 @@ const day2 =
     },
     {
       title: 'The Future of Layer 2: Research, Development, and Next-Gen Technologies',
-      stage: 'Main Stage',
+      stage: 'Mainstage',
       category: 'Keeping up with the protocol',
       startTime24hr: '17:00',
       endTime24hr: '17:25',
@@ -954,7 +958,7 @@ const day2 =
     },
     {
       title: 'Defragmenting Ethereum - Interoperability and the Superchain',
-      stage: 'Main Stage',
+      stage: 'Mainstage',
       category: 'Keeping up with the protocol',
       startTime24hr: '18:00',
       endTime24hr: '18:25',
@@ -971,7 +975,7 @@ const day2 =
       category: 'Security and Auditing (fun and hard)',
       startTime24hr: '14:30',
       endTime24hr: '17:30',
-      sessionChanged: true,
+      indexingFail: 'sessionChanged',
       startTimeInMins: "",
       endTimeInMins: "",
       start: 0,

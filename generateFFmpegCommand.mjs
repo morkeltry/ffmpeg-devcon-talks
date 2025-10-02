@@ -1,9 +1,10 @@
 import path from 'path';
-const basePath = "~/Downloads/devcon";
+const basePath = "day 3 - unprocessed/";
 
-import { files, day2 } from "./data.mjs";
-let day = 'day2';
-let target = day2;
+
+import { files, day3 } from "./data.mjs";
+let day = 'day3';
+let target = day3;
 
 
 const minsToSecs = mmmColonSs => {
@@ -36,12 +37,15 @@ const escapeStringforBash = str => str
 // uses stream copy (but generates separate runs if ffpmeg for each talk)
 
 function generateFFmpegCommands(slices, inputFile) {  
-// Generate individual FFmpeg commands for stream copying
-return slices.map((slice) => {
-    const safeTitle = escapeStringforBash(slice.title); // Escape title for Bash
-    const titleInQuotes = `$"{slice.title}"`;
-    return `ffmpeg -i ${inputFile} -ss ${slice.startSecs} -to ${slice.endSecs} -c:v copy -c:a copy ${safeTitle}.mp4`;
-}).join(' && \n');
+  // Generate individual FFmpeg commands for stream copying
+  return (slices
+    .filter(talk => Boolean(!(talk.indexingFail)))
+    .map((slice) => {
+        const safeTitle = escapeStringforBash(slice.title); // Escape title for Bash
+        const titleInQuotes = `$"{slice.title}"`;
+        return `ffmpeg -i ${inputFile} -ss ${slice.startSecs} -to ${slice.endSecs} -c:v copy -c:a copy ${safeTitle}.mp4`;
+    }).join(' && \n')
+  );
 }
 
   // Example usage:
@@ -63,36 +67,37 @@ return slices.map((slice) => {
   ];
 
   Object.keys(target)
-  .forEach(stage => {
-    target[stage]
-      .filter(talk => Boolean(!talk.indexingFail))
-      .forEach(talk => {
-        if (!talk.startSecs && talk.startTimeInMins)
-          talk.startSecs = minsToSecs(talk.startTimeInMins);
-        if (!talk.endSecs && talk.endTimeInMins)
-          talk.endSecs = minsToSecs(talk.endTimeInMins);
+    .forEach(stage => {
+      target[stage]
+        .filter(talk => Boolean(!(talk.indexingFail)))
+        .forEach(talk => {        
+          if (!talk.startSecs && talk.startTimeInMins)
+            talk.startSecs = minsToSecs(talk.startTimeInMins);
+          if (!talk.endSecs && talk.endTimeInMins)
+            talk.endSecs = minsToSecs(talk.endTimeInMins);
 
-        if (!talk.startSecs || !talk.endSecs) {
-            console.log({ talk });
-            throw new Error ("missing start/ end time");
-        }
-        if (talk.startSecs >= talk.endSecs) {
-            console.log({ talk });
-            throw new Error ("backwards talk!");
-        }
+          if (!talk.startSecs || !talk.endSecs) {
+              console.log({ talk });
+              throw new Error ("missing start/ end time");
+          }
+          if (talk.startSecs >= talk.endSecs) {
+              console.log({ talk });
+              throw new Error ("backwards talk!");
+          }
 
-        if (talk.endSecs-talk.startSecs > 3600) {
-            console.log("Warn: long talk:",{ talk });
-        }
+          if (talk.endSecs-talk.startSecs > 3600) {
+              console.log("Warn: long talk:",{ talk });
+          }
+      })
+
     })
 
-  })
-
   Object.keys(target)
+    .filter(stage => files[day][stage])
     .forEach(stage => {      
         // do not escape input filename, if we can enclose it in quotes (cannot do so if using ~)
         // const inputFile = path.join(basePath, files[day][stage]);        
-        const inputFile = path.join(basePath, escapeStringforBash(files[day][stage.replace(' ','')]));
+        const inputFile = path.join(escapeStringforBash(basePath), escapeStringforBash(files[day][stage.replace(' ','')]));
         console.log(generateFFmpegCommands(target[stage], inputFile), '&&');  
 
     })

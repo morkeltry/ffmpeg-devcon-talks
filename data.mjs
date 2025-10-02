@@ -1,4 +1,5 @@
 
+
 const files = {
     "day1": {
       "Breakout1": "Devcon SEA ｜ Breakout 1 - Day 1 [CH13V8pRzSk].mp4",
@@ -33,7 +34,7 @@ const files = {
       "Stage6": "Devcon SEA ｜ Stage 6 - Day 2 [1udf88Uh6UM].mp4"
     },
     "day3": {
-    "Breakout1": null,
+    "Breakout1": "Devcon SEA ｜ Breakout 1 - Day 3 [uIsCaqDRQqI]",
         "Breakout3": "Devcon SEA ｜ Breakout 3 - Day 3 [JBi3DwfFwto].mp4",
         "ClassroomA": "Devcon SEA ｜ Classroom A - Day 3 [NDWSsJRLqFQ].mp4",
         "ClassroomB": "Devcon SEA ｜ Classroom B - Day 3 [hddUwQvvFq8].mp4",
@@ -50,7 +51,7 @@ const files = {
     },
     "day4": {
         "Breakout1": null,
-        "Breakout3": "Devcon SEA ｜ Breakout 3 - Day 4 [G_ey_WenFH8].mp4",
+        "Breakclosingout3": "Devcon SEA ｜ Breakout 3 - Day 4 [G_ey_WenFH8].mp4",
         "ClassroomA": "Devcon SEA ｜ Classroom A - Day 4 [BI5XEDZAezs].mp4",
         "ClassroomB": "Devcon SEA ｜ Classroom B - Day 4 [9dAUhOYrmXI].mp4",
         "ClassroomC": "Devcon SEA ｜ Classroom C - Day 4 [HZnOhi2MDMs].mp4",
@@ -67,921 +68,745 @@ const files = {
 };
 
 
-const day2 =
-{
-  'Stage 4': [
+const day3 = {
+  "Stage6": [
     {
-      title: 'Rethinking Ethereum’s account model',
-      stage: 'Stage 4',
-      category: 'Other Abstractions',
-      startTime24hr: '09:45',
-      endTime24hr: '09:52',
-      startTimeInMins: "25:36",
-      endTimeInMins: "34:22",
-      start: 0,
-      end: 0
+      "title": "How To Hallucinate A Server",
+      "stage": "Stage6",
+      "startTime24hr": "09:45",
+      "endTime24hr": "10:10",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: 'Encrypted Mempools: a path to Ethereum L1',
-      stage: 'Stage 4',
-      category: 'Keeping up with the protocol',
-      startTime24hr: '09:55',
-      endTime24hr: '10:02',
-      startTimeInMins: "34:49",
-      endTimeInMins: "44:08",
-      start: 0,
-      end: 0
+      "title": "Decentralizing the Internet's collaboration layer",
+      "stage": "Stage6",
+      "startTime24hr": "10:30 AM",
+      "endTime24hr": "10:45 AM",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: "Things you didn't know about contract deployment",
-      stage: 'Stage 4',
-      category: 'Be a better dev',
-      startTime24hr: '11:00',
-      endTime24hr: '11:07',
-      startTimeInMins: "85:24",
-      endTimeInMins: "92:57",
-      start: 0,
-      end: 0
+      "title": "Trust-minimized P2P marketplaces on Ethereum",
+      "stage": "Stage6",
+      "startTime24hr": "10:50 AM",
+      "endTime24hr": "10:57 AM",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: 'Copying Memory in EVM, how hard can that be?',
-      stage: 'Stage 4',
-      category: 'Be a better dev',
-      startTime24hr: '11:20',
-      endTime24hr: '11:27',
-      startTimeInMins: "105:03",
-      endTimeInMins: "113:04",
-      start: 0,
-      end: 0
+      "title": "An introduction to programmable cryptography, culminating in the dream of a \"hallucinated server\"",
+      "stage": "Stage6",
+      "startTime24hr": "11:00",
+      "endTime24hr": "11:25",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: 'Programmable Cryptography and Smart Contract',
-      stage: 'Stage 4',
-      category: 'Be a better dev',
-      startTime24hr: '11:30 AM',
-      endTime24hr: '11:37 AM',
-      startTimeInMins: "113:40",
-      endTimeInMins: "119:40",
-      start: 0,
-      end: 0
+      "title": "Behind Zupass: Applied Cryptography For Consumers",
+      "stage": "Stage6",
+      "startTime24hr": "11:30 AM",
+      "endTime24hr": "11:55 AM",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: 'Firefly - Build your own hardware wallet',
-      stage: 'Stage 4',
-      category: 'Interesting/Mad',
-      startTime24hr: '11:50',
-      endTime24hr: '11:57',
-      startTimeInMins: "134:02",
-      endTimeInMins: "143:20",
-      start: 0,
-      end: 0
+      "title": "Little Things We've learned About FHE",
+      "stage": "Stage6",
+      "startTime24hr": "16:00",
+      "endTime24hr": "16:25",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: 'Building for the next billion: product validation tactics',
-      stage: 'Stage 4',
-      category: 'Cultures / Legal',
-      startTime24hr: '13:10',
-      endTime24hr: '13:17',
-      indexingFail: 'lunchBreak',
-      start: 0,
-      end: 0
+      "title": "Non-Native Arithmetic via CRT Codes",
+      "stage": "Stage6",
+      "startTime24hr": "16:30",
+      "endTime24hr": "16:55",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: 'How to onboard 22 million users overnight using non-conventional cryptography',
-      stage: 'Stage 4',
-      category: 'Reinforcement',
-      startTime24hr: '13:30',
-      endTime24hr: '13:37',
-      startTimeInMins: "235:00",
-      endTimeInMins: "243:17",
-      start: 0,
-      end: 0
-    },
-    {
-      title: 'Data-Driven Tokenomics: Analyzing Incentives in Action',
-      stage: 'Stage 4',
-      category: 'cryptoeconomics',
-      startTime24hr: '14:50',
-      endTime24hr: '14:57',
-      startTimeInMins: "314:40",
-      endTimeInMins: "324:16",
-      start: 0,
-      end: 0
-    },
-    {
-      title: 'Start contributing to economic protocol development',
-      stage: 'Stage 4',
-      category: 'cryptoeconomics',
-      startTime24hr: '15:00',
-      endTime24hr: '15:07',
-      startTimeInMins: "324:44",
-      endTimeInMins: "331:51",
-      start: 0,
-      end: 0
-    },
-    {
-      title: 'Sybil-Proof Mechanisms',
-      stage: 'Stage 4',
-      category: 'Keeping up with the protocol Sybil-Proof Mechanisms',
-      startTime24hr: '15:30',
-      endTime24hr: '15:37',
-      startTimeInMins: "354:50",
-      endTimeInMins: "363:44",
-      start: 0,
-      end: 0
-    },
-    {
-      title: 'Latency Advantage in CEX-DEX Arbitrage',
-      stage: 'Stage 4',
-      category: 'cryptoeconomics',
-      startTime24hr: '15:40',
-      endTime24hr: '15:47',
-      startTimeInMins: "364:14",
-      endTimeInMins: "373:30",
-      start: 0,
-      end: 0
-    },
-    {
-      title: 'AMMs as Managed, Customized Portfolios',
-      stage: 'Stage 4',
-      category: 'AMMs as Managed, Customized Portfolios',
-      startTime24hr: '15:50',
-      endTime24hr: '15:57',
-      startTimeInMins: "374:10",
-      endTimeInMins: "384:07",
-      start: 0,
-      end: 0
-    },
-    {
-      title: 'Inclusion List Inevitable Tradeoffs',
-      stage: 'Stage 4',
-      category: 'Keeping up with the protocol',
-      startTime24hr: '16:20',
-      endTime24hr: '16:27',
-      startTimeInMins: "404:14",
-      endTimeInMins: "410:00",
-      start: 0,
-      end: 0
-    },
-    {
-      title: 'Bringing peer-to-peer networks to ALL the peers',
-      stage: 'Stage 4',
-      category: 'Security and Auditing (fun and hard)',
-      startTime24hr: '17:10',
-      endTime24hr: '17:17',
-      startTimeInMins: "450:50",
-      endTimeInMins: "464:55",
-      start: 0,
-      end: 0
-    },
-    {
-      title: 'Cypherpunk is slow, not hyper-financialized and unlike Twitter',
-      stage: 'Stage 4',
-      category: 'Cultures, Legal',
-      startTime24hr: '17:20',
-      endTime24hr: '17:27',
-      startTimeInMins: "465:27",
-      endTimeInMins: "473:00",
-      start: 0,
-      end: 0
-    },
-    {
-      title: 'Our (Cypherpunk) approach to Self-Sovereign Digital Identity does not work in real world',
-      stage: 'Stage 4',
-      category: 'Cultures, Legal',
-      startTime24hr: '17:40',
-      endTime24hr: '17:47',
-      startTimeInMins: "485:05",
-      endTimeInMins: "492:05",
-      start: 0,
-      end: 0
-    },
-    {
-      title: 'Visual code of cypherpunk, and lessons from subcultural aesthetics we should remember on the road to mass adoption',
-      stage: 'Stage 4',
-      category: 'Cultures, Legal',
-      startTime24hr: '17:50',
-      endTime24hr: '17:57',
-      startTimeInMins: "492:46",
-      endTimeInMins: "505:30",
-      start: 0,
-      end: 0
-    },
-    {
-      title: 'Making defensive technology offensive: How to get cypherpunk ideals to the masses',
-      stage: 'Stage 4',
-      category: 'Cultures, Legal',
-      startTime24hr: '18:00',
-      endTime24hr: '18:07',
-      startTimeInMins: "505:55",
-      endTimeInMins: "512:03",
-      start: 0,
-      end: 0
+      "title": "How Hardhat 3 will ensure precise simulation for L2s using EDR",
+      "stage": "Stage6",
+      "startTime24hr": "18:00",
+      "endTime24hr": "18:25",
+      "startSecs": 0,
+      "endSecs": 0
     }
   ],
-  'Stage 5': [
+  "ClassroomC": [
     {
-      title: 'Fraud proofs war',
-      stage: 'Stage 5',
-      category: 'Cross chain, based and preconfs',
-      startTime24hr: '10:30',
-      endTime24hr: '10:55',
-      startTimeInMins: "61:22",
-      endTimeInMins: "85:46",
-      start: 0,
-      end: 0
-    },
-    {
-      title: 'Dave fraud-proof algorithm — triumphing over Sybils with a laptop and a small collateral',
-      stage: 'Stage 5',
-      category: 'Security and Auditing (fun and hard)',
-      startTime24hr: '11:00',
-      endTime24hr: '11:25',
-      startTimeInMins: "91:02",
-      endTimeInMins: "113:55",
-      start: 0,
-      end: 0
-    },
-    {
-      title: 'L2 Interoperability via Collaborative SNARKs',
-      stage: 'Stage 5',
-      category: 'Cross chain, based and preconfs',
-      startTime24hr: '12:00',
-      endTime24hr: '12:25',
-      startTimeInMins: "150:55",
-      endTimeInMins: "176:15",
-      start: 0,
-      end: 0
-    },
-    {
-      title: 'Why ERC 7683 is broken and how to fix it',
-      stage: 'Stage 5',
-      category: 'Intents',
-      startTime24hr: '13:30',
-      endTime24hr: '13:55',
-      startTimeInMins: "240:50",
-      endTimeInMins: "262:10",
-      start: 0,
-      end: 0
-    },
-    {
-      title: 'What would Hal Finney, Tim May, David Chaum, and other cypherpunks think about the current state of Ethereum, cryptography, privacy, and trusted hardware?',
-      stage: 'Stage 5',
-      category: 'Interesting',
-      startTime24hr: '15:00',
-      endTime24hr: '15:25',
-      startTimeInMins: "331:18",
-      endTimeInMins: "355:46",
-      start: 0,
-      end: 0
-    },
-    {
-      title: 'Unlocking New Possibilities with Stateless Architecture in Layer 2',
-      stage: 'Stage 5',
-      category: 'Cross chain, based and preconfs',
-      startTime24hr: '18:00',
-      endTime24hr: '18:25',
-      startTimeInMins: "510:56",
-      endTimeInMins: "533:57",
-      start: 0,
-      end: 0
+      "title": "Better privacy defaults for your users with stealth addresses",
+      "stage": "ClassroomC",
+      "startTime24hr": "09:45",
+      "endTime24hr": "11:05",
+      "startSecs": 0,
+      "endSecs": 0
     }
   ],
-  'Stage 3': [
+  "Breakout3": [
     {
-      title: 'ZK Email - Fast Proofs and Production-Ready Account Recovery',
-      stage: 'Stage 3',
-      category: 'Products',
-      startTime24hr: '10:30',
-      endTime24hr: '10:55',
-      startTimeInMins: "61:13",
-      endTimeInMins: "86:19",
-      start: 0,
-      end: 0
+      "title": "Building Towards a Resilient Utopia",
+      "stage": "Breakout3",
+      "startTime24hr": "10:00 AM",
+      "endTime24hr": "10:10 AM",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: 'Developing and using a modular folding schemes library',
-      stage: 'Stage 3',
-      category: 'Hard ZK',
-      startTime24hr: '11:30',
-      endTime24hr: '11:55',
-      startTimeInMins: "119:44",
-      endTimeInMins: "145:51",
-      start: 0,
-      end: 0
+      "title": "Building Towards a Resilient Utopia",
+      "stage": "Breakout3",
+      "startTime24hr": "10:10 AM",
+      "endTime24hr": "10:20 AM",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: 'Leveraging High-Performance Computing for Efficient STARK Provers',
-      stage: 'Stage 3',
-      category: 'Hard ZK',
-      startTime24hr: '13:00',
-      endTime24hr: '13:25',
-      startTimeInMins: "209:58",
-      endTimeInMins: "237:26",
-      start: 0,
-      end: 0
+      "title": "Circles - resilient money",
+      "stage": "Breakout3",
+      "startTime24hr": "11:28",
+      "endTime24hr": "11:42",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: 'The Supreme Ruler of the World',
-      stage: 'Stage 3',
-      category: 'Hard ZK',
-      startTime24hr: '15:00',
-      endTime24hr: '15:25',
-      startTimeInMins: "329:51",
-      endTimeInMins: "354:28",
-      start: 0,
-      end: 0
+      "title": "Building Towards a Resilient Utopia",
+      "stage": "Breakout3",
+      "startTime24hr": "12:10",
+      "endTime24hr": "12:20",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: 'Wizard: build your own P-IOP protocol in 15 min!',
-      stage: 'Stage 3',
-      category: 'Hard ZK',
-      startTime24hr: '15:30',
-      endTime24hr: '15:55',
-      startTimeInMins: "359:56",
-      endTimeInMins: "384:29",
-      start: 0,
-      end: 0
+      "title": "Public epistemics and futarchy",
+      "stage": "Breakout3",
+      "startTime24hr": "12:30",
+      "endTime24hr": "13:00",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: 'Top opcode offenders in the zkEVM',
-      stage: 'Stage 3',
-      category: 'Cryptoeconomics',
-      startTime24hr: '16:30',
-      endTime24hr: '16:55',
-      startTimeInMins: "419:26",
-      endTimeInMins: "442:05",
-      start: 0,
-      end: 0
+      "title": "Prediction market panel",
+      "stage": "Breakout3",
+      "startTime24hr": "12:50",
+      "endTime24hr": "13:05",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: 'The verge is (not) going to break your contracts!',
-      stage: 'Stage 3',
-      category: 'Keeping up with the protocol',
-      startTime24hr: '17:00',
-      endTime24hr: '17:25',
-      startTimeInMins: "449:16",
-      endTimeInMins: "468:16",
-      start: 0,
-      end: 0
+      "title": "Hardware Security: From Sand to Stone",
+      "stage": "Breakout3",
+      "startTime24hr": "16:20",
+      "endTime24hr": "16:30",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: 'Cheatcalls EIP',
-      stage: 'Stage 3',
-      category: 'Be a better dev',
-      startTime24hr: '17:30',
-      endTime24hr: '17:55',
-      startTimeInMins: "478:50",
-      endTimeInMins: "503:03",
-      start: 0,
-      end: 0
+      "title": "Programmable Cryptography and d/acc",
+      "stage": "Breakout3",
+      "startTime24hr": "17:00",
+      "endTime24hr": "17:20",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: 'Hardhat 3 Preview: Overhauled & Rust-Powered',
-      stage: 'Stage 3',
-      category: 'Be a better dev',
-      startTime24hr: '18:00',
-      endTime24hr: '18:25',
-      startTimeInMins: "508:47",
-      endTimeInMins: "535:51",
-      start: 0,
-      end: 0
+      "title": "d/acc closing panel",
+      "stage": "Breakout3",
+      "startTime24hr": "18:20",
+      "endTime24hr": "18:50",
+      "startSecs": 0,
+      "endSecs": 0
     }
   ],
-  'Classroom E': [
+  "Stage4": [
     {
-      title: 'Supernodes on a Shoestring: Democratizing Ethereum with Low-Power Hardware',
-      stage: 'Classroom E',
-      category: 'Interesting / Mad',
-      startTime24hr: '11:30',
-      endTime24hr: '12:50',
-      startTimeInMins: "114:53",
-      endTimeInMins: "189:26",
-      start: 0,
-      end: 0
+      "title": "Chain-abstracted Smart Accounts -- How to Build Amazing Web3 UX in 2024",
+      "stage": "Stage4",
+      "startTime24hr": "10:05 AM",
+      "endTime24hr": "10:12 AM",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: 'Deep dive: how to use ERC- 3668 to trustlessly read L2 data from L1',
-      stage: 'Classroom E',
-      category: 'Cross chain, based and preconfs',
-      startTime24hr: '14:00',
-      endTime24hr: '15:20',
-      startTimeInMins: "261:34",
-      endTimeInMins: "318:24",
-      start: 0,
-      end: 0
+      "title": "Achieving Chain Abstraction through Transaction Orchestration",
+      "stage": "Stage4",
+      "startTime24hr": "10:30",
+      "endTime24hr": "10:37",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: 'Hardening the Commons',
-      stage: 'Classroom E',
-      category: 'Cultures, Legal',
-      startTime24hr: '15:30',
-      endTime24hr: '18:20',
-      startTimeInMins: "356:05",
-      endTimeInMins: "535:04",
-      start: 0,
-      end: 0
+      "title": "Chain abstraction is risk abstraction",
+      "stage": "Stage4",
+      "startTime24hr": "10:40",
+      "endTime24hr": "10:47",
+      "startSecs": 0,
+      "endSecs": 0
+    },
+    {
+      "title": "Chain abstraction? But I want to know where my tokens are",
+      "stage": "Stage4",
+      "startTime24hr": "10:50",
+      "endTime24hr": "10:57",
+      "startSecs": 0,
+      "endSecs": 0
+    },
+    {
+      "title": "The End Game Wallet: When Does Abstraction Go Too Far?",
+      "stage": "Stage4",
+      "startTime24hr": "11:00 AM",
+      "endTime24hr": "11:07 AM",
+      "startSecs": 0,
+      "endSecs": 0
+    },
+    {
+      "title": "Putting Intents and Users Together",
+      "stage": "Stage4",
+      "startTime24hr": "11:10 AM",
+      "endTime24hr": "11:17 AM",
+      "startSecs": 0,
+      "endSecs": 0
+    },
+    {
+      "title": "Exploring various approaches to achieve effective decentralization for Intent-Based protocols",
+      "stage": "Stage4",
+      "startTime24hr": "11:20 AM",
+      "endTime24hr": "11:27 AM",
+      "startSecs": 0,
+      "endSecs": 0
+    },
+    {
+      "title": "Wallet Infra Improvements, and Building Apps for the Next Generation",
+      "stage": "Stage4",
+      "startTime24hr": "11:30",
+      "endTime24hr": "11:37",
+      "startSecs": 0,
+      "endSecs": 0
+    },
+    {
+      "title": "From MPC Wallets to Smart Contract Accounts",
+      "stage": "Stage4",
+      "startTime24hr": "11:40",
+      "endTime24hr": "11:47",
+      "startSecs": 0,
+      "endSecs": 0
+    },
+    {
+      "title": "The Rise of AI in Web3 Development UX",
+      "stage": "Stage4",
+      "startTime24hr": "13:20",
+      "endTime24hr": "13:27",
+      "startSecs": 0,
+      "endSecs": 0
+    },
+    {
+      "title": "Abstract wallets and chains through Profiles",
+      "stage": "Stage4",
+      "startTime24hr": "13:50",
+      "endTime24hr": "13:57",
+      "startSecs": 0,
+      "endSecs": 0
+    },
+    {
+      "title": "Reclaiming our $8 billion: funding public goods with stablecoin profits",
+      "stage": "Stage4",
+      "startTime24hr": "18:00",
+      "endTime24hr": "18:07",
+      "startSecs": 0,
+      "endSecs": 0
     }
   ],
-  'Classroom D': [
+  "Stage2": [
     {
-      title: 'Bringing web2 users onchain: Picnic’s case study',
-      stage: 'Classroom D',
-      category: 'Products',
-      startTime24hr: '14:30',
-      endTime24hr: '15:50',
-      startTimeInMins: "287:25",
-      endTimeInMins: "355:10",
-      start: 0,
-      end: 0
+      "title": "Finding rough consensus on issuance",
+      "stage": "Stage2",
+      "startTime24hr": "10:30 AM",
+      "endTime24hr": "10:55 AM",
+      "startSecs": 0,
+      "endSecs": 0
+    },
+    {
+      "title": "Maximum Viable Security (MVS) – a new issuance framework",
+      "stage": "Stage2",
+      "startTime24hr": "11:00",
+      "endTime24hr": "11:25",
+      "startSecs": 0,
+      "endSecs": 0
+    },
+    {
+      "title": "Practical endgame on issuance policy",
+      "stage": "Stage2",
+      "startTime24hr": "11:30",
+      "endTime24hr": "11:55",
+      "startSecs": 0,
+      "endSecs": 0
+    },
+    {
+      "title": "Exploring the Future of Account Abstraction",
+      "stage": "Stage2",
+      "startTime24hr": "12:00 PM",
+      "endTime24hr": "12:25 PM",
+      "startSecs": 0,
+      "endSecs": 0
+    },
+    {
+      "title": "Native Account Abstraction in Pectra, rollups and beyond: combining EOF, EIP-7702 and RIP-7560",
+      "stage": "Stage2",
+      "startTime24hr": "12:30",
+      "endTime24hr": "12:55",
+      "startSecs": 0,
+      "endSecs": 0
+    },
+    {
+      "title": "ERC-4337: Adoption Analysis",
+      "stage": "Stage2",
+      "startTime24hr": "13:00",
+      "endTime24hr": "13:25",
+      "startSecs": 0,
+      "endSecs": 0
+    },
+    {
+      "title": "This talk will show the geographical and ISP distribution of the nodes in the Ethereum network, the client diversity, the hardware requirements to run a node today, the power consumption, the storage load after EIP-4844, the block and blob network latency, the institutional staker distribution as well as the correlated failure analysis looking at EIP-7716. We will also show some projections on how the network could look 5 years from now, taking into account peerDAS and fullDAS.",
+      "stage": "Stage2",
+      "startTime24hr": "14:40",
+      "endTime24hr": "14:47",
+      "startSecs": 0,
+      "endSecs": 0
+    },
+    {
+      "title": "Insights from block propagation in the Ethereum P2P network",
+      "stage": "Stage2",
+      "startTime24hr": "14:50",
+      "endTime24hr": "14:57",
+      "startSecs": 0,
+      "endSecs": 0
+    },
+    {
+      "title": "Web3 Security is Embarrasing",
+      "stage": "Stage2",
+      "startTime24hr": "15:30",
+      "endTime24hr": "15:55",
+      "startSecs": 0,
+      "endSecs": 0
+    },
+    {
+      "title": "From Web2 Security With Love",
+      "stage": "Stage2",
+      "startTime24hr": "16:00",
+      "endTime24hr": "16:25",
+      "startSecs": 0,
+      "endSecs": 0
+    },
+    {
+      "title": "Security Frameworks by SEAL",
+      "stage": "Stage2",
+      "startTime24hr": "16:30",
+      "endTime24hr": "16:55",
+      "startSecs": 0,
+      "endSecs": 0
+    },
+    {
+      "title": "How to stay safe from the biggest threat actor in crypto",
+      "stage": "Stage2",
+      "startTime24hr": "17:30",
+      "endTime24hr": "17:55",
+      "startSecs": 0,
+      "endSecs": 0
+    },
+    {
+      "title": "The Long Con: Pig Butchering, Drainers, and Job Scams",
+      "stage": "Stage2",
+      "startTime24hr": "18:00",
+      "endTime24hr": "18:25",
+      "startSecs": 0,
+      "endSecs": 0
     }
   ],
-  'Classroom B': [
+  "Mainstage": [
     {
-      title: 'Finding Bugs: 42 Tips from 4 Security Researchers',
-      stage: 'Classroom B',
-      category: 'Security and Auditing (fun and hard)',
-      startTime24hr: '09:45',
-      endTime24hr: '11:05',
-      startTimeInMins: "24:50",
-      endTimeInMins: "117:25",
-      start: 0,
-      end: 0
+      "title": "Talk - Main Stage, Level 1",
+      "stage": "Mainstage",
+      "startTime24hr": "10:30",
+      "endTime24hr": "10:55",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: 'Top Hacks since Devcon VI: what did we learn?',
-      stage: 'Classroom B',
-      category: 'Security and Auditing (fun and hard)',
-      startTime24hr: '14:30',
-      endTime24hr: '15:50',
-      startTimeInMins: "293:57",
-      endTimeInMins: "375:07",
-      start: 0,
-      end: 0
+      "title": "Make Ethereum Cypherpunk Again: Why we need privacy",
+      "stage": "Mainstage",
+      "startTime24hr": "11:00",
+      "endTime24hr": "11:25",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: "Don't get rekt: practical threat detection for users and devs",
-      stage: 'Classroom B',
-      category: 'Security and Auditing (fun and hard)',
-      startTime24hr: '16:00',
-      endTime24hr: '17:50',
-      indexingFail: 'cantFindIt',
-      startTimeInMins: "",
-      endTimeInMins: "",
-      start: 0,
-      end: 0
+      "title": "Blockchain and the economy of online information",
+      "stage": "Mainstage",
+      "startTime24hr": "15:10",
+      "endTime24hr": "15:17",
+      "startSecs": 0,
+      "endSecs": 0
     }
   ],
-  'Stage 1': [
+  "Stage5": [
     {
-      title: 'Realizing the Rollup Centric Roadmap with Rollup-Boost',
-      stage: 'Stage 1',
-      category: 'Cross chain, based and preconfs',
-      startTime24hr: '13:30',
-      endTime24hr: '13:55',
-      startTimeInMins: "233:45",
-      endTimeInMins: "258:14",
-      start: 0,
-      end: 0
+      "title": "The Franklin Fallacy, Why We Misjudge New Technologies",
+      "stage": "Stage5",
+      "startTime24hr": "10:30",
+      "endTime24hr": "10:55",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: 'Passkeys : the good, the bad, the ugly',
-      stage: 'Stage 1',
-      category: 'Security and Auditing (fun and hard)',
-      startTime24hr: '14:20',
-      endTime24hr: '14:45',
-      startTimeInMins: "283:48",
-      endTimeInMins: "309:19",
-      start: 0,
-      end: 0
+      "title": "How much security does your restaking protocol really need?",
+      "stage": "Stage5",
+      "startTime24hr": "11:00",
+      "endTime24hr": "11:25",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: 'How To Destroy A Network: Offboarding The Mainstream',
-      stage: 'Stage 1',
-      category: 'Cultures, Legal',
-      startTime24hr: '14:50',
-      endTime24hr: '15:15',
-      startTimeInMins: "312:55",
-      endTimeInMins: "337:05",
-      start: 0,
-      end: 0
+      "title": "Who Wins Ethereum Block Building Auctions and Why?",
+      "stage": "Stage5",
+      "startTime24hr": "11:30",
+      "endTime24hr": "11:55",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: 'a brief introduction to private and secure Android',
-      stage: 'Stage 1',
-      category: 'Products',
-      startTime24hr: '15:20',
-      endTime24hr: '15:45',
-      indexingFail: "Not recorded",
-      startTimeInMins: "",
-      endTimeInMins: "",
-      start: 0,
-      end: 0
+      "title": "Bootstrapping a block builder",
+      "stage": "Stage5",
+      "startTime24hr": "12:00",
+      "endTime24hr": "12:25",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: 'Designing Conditional Markets and Futarchy',
-      stage: 'Stage 1',
-      category: 'cryptoeconomics',
-      startTime24hr: '15:50',
-      endTime24hr: '16:15',
-      startTimeInMins: "372:12",
-      endTimeInMins: "397:38",
-      start: 0,
-      end: 0
+      "title": "Usability changes in a post-EOA world",
+      "stage": "Stage5",
+      "startTime24hr": "15:30",
+      "endTime24hr": "15:55",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: 'Comparing Slashing Penalties on Proof-of-Stake Networks',
-      stage: 'Stage 1',
-      category: 'Cryptoeconomics',
-      startTime24hr: '18:20',
-      endTime24hr: '18:27',
-      startTimeInMins: "522:03",
-      endTimeInMins: "530:17",
-      start: 0,
-      end: 0
+      "title": "Cross L2 with Intent Addresses",
+      "stage": "Stage5",
+      "startTime24hr": "16:00",
+      "endTime24hr": "16:25",
+      "startSecs": 0,
+      "endSecs": 0
+    },
+    {
+      "title": "The Chain Abstraction Master Plan",
+      "stage": "Stage5",
+      "startTime24hr": "16:30",
+      "endTime24hr": "16:45",
+      "startSecs": 0,
+      "endSecs": 0
+    },
+    {
+      "title": "Solving Multichain UX: Lessons from Cosmos for the Rollup Ecosystem",
+      "stage": "Stage5",
+      "startTime24hr": "16:50",
+      "endTime24hr": "17:15",
+      "startSecs": 0,
+      "endSecs": 0
+    },
+    {
+      "title": "Interoperability between L2s: Latest developments, Framework and Challenges",
+      "stage": "Stage5",
+      "startTime24hr": "17:20",
+      "endTime24hr": "17:27",
+      "startSecs": 0,
+      "endSecs": 0
+    },
+    {
+      "title": "Advancing Ethereum Scalability: Architectural Innovation Trends in the Layer 2",
+      "stage": "Stage5",
+      "startTime24hr": "17:30",
+      "endTime24hr": "17:37",
+      "startSecs": 0,
+      "endSecs": 0
+    },
+    {
+      "title": "L1SLOAD Precompile: Read L1 State from your L2 Contract",
+      "stage": "Stage5",
+      "startTime24hr": "17:50",
+      "endTime24hr": "17:05",
+      "startSecs": 0,
+      "endSecs": 0
+    },
+    {
+      "title": "ZK in Rollups: Full Validity Proving on the OP Stack",
+      "stage": "Stage5",
+      "startTime24hr": "18:10",
+      "endTime24hr": "18:25",
+      "startSecs": 0,
+      "endSecs": 0
     }
   ],
-  'Stage 2': [
+  "Stage3": [
     {
-      title: 'Everything you need to know about state expiry',
-      stage: 'Stage 2',
-      category: 'Keeping up with the protocol',
-      startTime24hr: '10:30',
-      endTime24hr: '10:55',
-      startTimeInMins: "56:26",
-      endTimeInMins: "78:41",
-      start: 0,
-      end: 0
+      "title": "Zoom in on EOF stack validation",
+      "stage": "Stage3",
+      "startTime24hr": "10:30",
+      "endTime24hr": "10:55",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: "Decentralizing access to Ethereum utilizing Ethereum's Portal Networks",
-      stage: 'Stage 2',
-      category: 'Keeping up with the protocol',
-      startTime24hr: '11:00',
-      endTime24hr: '11:25',
-      startTimeInMins: "86:17",
-      endTimeInMins: "109:01",
-      start: 0,
-      end: 0
+      "title": "Fast Modular Arithmetic in EVM",
+      "stage": "Stage3",
+      "startTime24hr": "11:00 AM",
+      "endTime24hr": "11:25 AM",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: 'zkProving the history of Ethereum in real time',
-      stage: 'Stage 2',
-      category: 'Cross chain, based and preconfs',
-      startTime24hr: '12:00',
-      endTime24hr: '12:25',
-      startTimeInMins: "146:17",
-      endTimeInMins: "173:01",
-      start: 0,
-      end: 0
+      "title": "hevm or: How I Learned to Stop Worrying and Love the Symbolic Execution",
+      "stage": "Stage3",
+      "startTime24hr": "12:00 PM",
+      "endTime24hr": "12:25 PM",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: 'The Hidden Benefits of Client Diversity',
-      stage: 'Stage 2',
-      category: 'Intents and Other Abstractions',
-      startTime24hr: '13:30',
-      endTime24hr: '13:55',
-      startTimeInMins: "236:02",
-      endTimeInMins: "259:36",
-      start: 0,
-      end: 0
+      "title": "Unpacking EOF: Applications in Developer Infrastructure and Tooling",
+      "stage": "Stage3",
+      "startTime24hr": "12:30 PM",
+      "endTime24hr": "12:37 PM",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: 'The Verkle Advantage',
-      stage: 'Stage 2',
-      category: 'Keeping up with the protocol',
-      startTime24hr: '16:00',
-      endTime24hr: '16:25',
-      startTimeInMins: "364:33",
-      indexingFail: "Video ends abruptly during session",
-      endTimeInMins: "",
-      start: 0,
-      end: 0
+      "title": "The Future of EOF: Layer 1, Layer 2, and Beyond!",
+      "stage": "Stage3",
+      "startTime24hr": "12:50 PM",
+      "endTime24hr": "13:15 PM",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: 'Today Verkle + Tomorrow ZK = Everything Stateless, Everything Lightclient',
-      stage: 'Stage 2',
-      category: 'Keeping up with the protocol',
-      startTime24hr: '16:30',
-      endTime24hr: '16:55',
-      startTimeInMins: "",
-      endTimeInMins: "",
-      indexingFail: "Video ends abruptly during previous session",
-      start: 0,
-      end: 0
+      "title": "Redis EVM: Supercharging Ethereum calls with in-memory execution",
+      "stage": "Stage3",
+      "startTime24hr": "13:20",
+      "endTime24hr": "13:27",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: 'Announcing the Argot Collective',
-      stage: 'Stage 2',
-      category: 'Cultures, Legal',
-      startTime24hr: '17:00',
-      endTime24hr: '17:25',
-      startTimeInMins: "",
-      endTimeInMins: "",
-      indexingFail: "Video ends abruptly during earlier session",
-      start: 0,
-      end: 0
+      "title": "Solidity: Then, Now, & the Future!",
+      "stage": "Stage3",
+      "startTime24hr": "16:00",
+      "endTime24hr": "16:25",
+      "startSecs": 0,
+      "endSecs": 0
+    },
+    {
+      "title": "Solidity Inline-Assembly for Developer Experience",
+      "stage": "Stage3",
+      "startTime24hr": "16:30",
+      "endTime24hr": "16:55",
+      "startSecs": 0,
+      "endSecs": 0
+    },
+    {
+      "title": "Interpreting Solidity",
+      "stage": "Stage3",
+      "startTime24hr": "17:00",
+      "endTime24hr": "17:25",
+      "startSecs": 0,
+      "endSecs": 0
+    },
+    {
+      "title": "What is the role of programming languages in helping smart contracts become reliable and scalable technology? Are our current languages for the EVM up to the task? Has Ethereum lost the lead in this regard?",
+      "stage": "Stage3",
+      "startTime24hr": "17:30",
+      "endTime24hr": "17:55",
+      "startSecs": 0,
+      "endSecs": 0
     }
   ],
-  'Stage 6': [
+  "ClassroomD": [
     {
-      title: 'ERC-3668 on Linea: built-in, trust-minimized L2 to L1 data retrieval',
-      stage: 'Stage 6',
-      category: 'Cross chain, based and preconfs',
-      startTime24hr: '12:30',
-      endTime24hr: '12:55',
-      startTimeInMins: "176:35",
-      endTimeInMins: "192:30",
-      start: 0,
-      end: 0
+      "title": "Reading Ethereum's Tea Leaves with Xatu data",
+      "stage": "ClassroomD",
+      "startTime24hr": "10:30",
+      "endTime24hr": "11:50",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: 'Indexing Ethereum: When and How to Build an Indexer',
-      stage: 'Stage 6',
-      category: 'Be a better dev',
-      startTime24hr: '14:00',
-      endTime24hr: '14:25',
-      startTimeInMins: "267:01",
-      endTimeInMins: "293:00",
-      start: 0,
-      end: 0
+      "title": "Learn Huff to become an EVM chad",
+      "stage": "ClassroomD",
+      "startTime24hr": "13:00",
+      "endTime24hr": "14:50",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: 'Keynote: The Universal Cryptographic Adapter',
-      stage: 'Stage 6',
-      category: 'Products',
-      startTime24hr: '14:30',
-      endTime24hr: '14:55',
-      startTimeInMins: "296:11",
-      endTimeInMins: "315:42",
-      start: 0,
-      end: 0
-    },
-    {
-      title: 'A Year Review with Lessons Learnt, Interesting Research Questions & Future Direction',
-      stage: 'Stage 6',
-      category: 'Cultures, Legal',
-      startTime24hr: '15:30',
-      endTime24hr: '15:55',
-      startTimeInMins: "355:48",
-      endTimeInMins: "382:48",
-      start: 0,
-      end: 0
-    },
-    {
-      title: 'Lunarpunk Endgame',
-      stage: 'Stage 6',
-      category: 'Cultures, Legal',
-      startTime24hr: '16:00',
-      endTime24hr: '16:25',
-      startTimeInMins: "385:48",
-      endTimeInMins: "412:25",
-      start: 0,
-      end: 0
-    },
-    {
-      title: 'Lunarpunk Surprise',
-      stage: 'Stage 6',
-      category: 'Cultures, Legal',
-      startTime24hr: '16:00',
-      endTime24hr: '16:25',
-      startTimeInMins: "415:15",
-      endTimeInMins: "433:18",
-      start: 0,
-      end: 0
-    },
-    {
-      title: 'From Auctions to ZK: An Educational Tour of MPC Tools',
-      stage: 'Stage 6',
-      category: 'Hard ZK',
-      startTime24hr: '16:50',
-      endTime24hr: '17:15',
-      startTimeInMins: "436:10",
-      endTimeInMins: "760:55",
-      start: 0,
-      end: 0
-    },
-    {
-      title: 'Tending the Infinite Garden: Organizational Culture in the Ethereum Ecosystem',
-      stage: 'Stage 6',
-      category: 'Cultures, Legal',
-      startTime24hr: '18:00',
-      endTime24hr: '18:25',
-      startTimeInMins: "505:00",
-      endTimeInMins: "568:57",
-      start: 0,
-      end: 0
+      "title": "Structuring Censorship Resistant Privacy Protocols: Risks and Considerations",
+      "stage": "ClassroomD",
+      "startTime24hr": "16:30",
+      "endTime24hr": "17:50",
+      "startSecs": 0,
+      "endSecs": 0
     }
   ],
-  'Classroom A': [
+  "Stage1": [
     {
-      title: 'Clear: a Formal Verification framework for smart contracts in Lean',
-      stage: 'Classroom A',
-      category: 'Security and Auditing (fun and hard)',
-      startTime24hr: '11:20',
-      endTime24hr: '12:40',
-      startTimeInMins: "103:32",
-      endTimeInMins: "182:22",
-      start: 0,
-      end: 0
+      "title": "Argentina’s Opportunity & the Case for a Special Economic Zone",
+      "stage": "Stage1",
+      "startTime24hr": "11:30",
+      "endTime24hr": "11:37",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: 'ZKpassport: Private Unforgeable Identity',
-      stage: 'Classroom A',
-      category: 'Products',
-      startTime24hr: '14:50',
-      endTime24hr: '15:15',
-      startTimeInMins: "308:41",
-      endTimeInMins: "329:12",
-      start: 0,
-      end: 0
+      "title": "the case for cute/acc",
+      "stage": "Stage1",
+      "startTime24hr": "12:00 PM",
+      "endTime24hr": "12:07 PM",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: 'Digital Pheromones: MPC for Human Connection & Coordination',
-      stage: 'Classroom A',
-      category: 'Hard ZK',
-      startTime24hr: '15:20',
-      endTime24hr: '15:45',
-      startTimeInMins: "335:34",
-      endTimeInMins: "360:45",
-      start: 0,
-      end: 0
+      "title": "Simulating an Ethereum network at scale",
+      "stage": "Stage1",
+      "startTime24hr": "13:10",
+      "endTime24hr": "13:35",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: "What's going to get us from web2 to web3? Therapy",
-      stage: 'Classroom A',
-      category: 'Cultures, Legal',
-      startTime24hr: '15:50',
-      endTime24hr: '15:57',
-      startTimeInMins: "365:19",
-      endTimeInMins: "374:13",
-      start: 0,
-      end: 0
+      "title": "Gas Limit and Block Execution",
+      "stage": "Stage1",
+      "startTime24hr": "13:40",
+      "endTime24hr": "13:55",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: 'Governance Innovation: Analysis on Voter Behavior in Blockchain Governance',
-      stage: 'Classroom A',
-      category: 'Cultures, Legal',
-      startTime24hr: '16:10',
-      endTime24hr: '16:17',
-      startTimeInMins: "382:25",
-      endTimeInMins: "392:38",
-      start: 0,
-      end: 0
+      "title": "How long non-finality could kill Ethereum",
+      "stage": "Stage1",
+      "startTime24hr": "14:10",
+      "endTime24hr": "14:35",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: 'Next generation of governors will be modular!',
-      stage: 'Classroom A',
-      category: 'Cultures, Legal',
-      startTime24hr: '16:20',
-      endTime24hr: '16:27',
-      startTimeInMins: "395:34",
-      endTimeInMins: "400:33",
-      start: 0,
-      end: 0
+      "title": "Fork-Choice enforced Inclusion Lists (FOCIL)",
+      "stage": "Stage1",
+      "startTime24hr": "14:40",
+      "endTime24hr": "15:05",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: 'Protocol Alignment: Governing like a Protocol',
-      stage: 'Classroom A',
-      category: 'Cultures, Legal',
-      startTime24hr: '16:30',
-      endTime24hr: '16:37',
-      startTimeInMins: "404:37",
-      endTimeInMins: "413:58",
-      start: 0,
-      end: 0
+      "title": "Staking on Power Efficient and Low Cost Hardware: From ARM64 to RISC-V Boards",
+      "stage": "Stage1",
+      "startTime24hr": "15:10",
+      "endTime24hr": "15:35",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: 'A Purposefully Designed Schelling Point',
-      stage: 'Classroom A',
-      category: 'Products',
-      startTime24hr: '17:00',
-      endTime24hr: '17:07',
-      startTimeInMins: "434:17",
-      endTimeInMins: "444:25",
-      start: 0,
-      end: 0
+      "title": "A Fast Confirmation Rule for Ethereum",
+      "stage": "Stage1",
+      "startTime24hr": "16:40",
+      "endTime24hr": "17:05",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: 'Indexing Entire 2.4 Billion Transactions on Ethereum in 10 Hours',
-      stage: 'Classroom A',
-      category: 'Interesting, Mad',
-      startTime24hr: '17:10',
-      endTime24hr: '17:17',
-      startTimeInMins: "445:14",
-      endTimeInMins: "453:38",
-      start: 0,
-      end: 0
+      "title": "State Contention Rules Everything Around Me",
+      "stage": "Stage1",
+      "startTime24hr": "17:10",
+      "endTime24hr": "17:35",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: 'Discover the Next Generation of Blockchain Exploration',
-      stage: 'Classroom A',
-      category: 'Products',
-      startTime24hr: '17:20',
-      endTime24hr: '17:27',
-      startTimeInMins: "454:00",
-      endTimeInMins: "461:22",
-      start: 0,
-      end: 0
+      "title": "State Minimized Layer-2s and Why Ethereum > EVM",
+      "stage": "Stage1",
+      "startTime24hr": "18:10",
+      "endTime24hr": "18:17",
+      "startSecs": 0,
+      "endSecs": 0
+    },
+    {
+      "title": "Gas Metering: Comparing Appchain Rollups vs. General Purpose Rollups",
+      "stage": "Stage1",
+      "startTime24hr": "18:20",
+      "endTime24hr": "18:27",
+      "startSecs": 0,
+      "endSecs": 0
     }
   ],
-  'Breakout 1': [
+  "ClassroomE": [
     {
-      title: 'The presentation of EPF Project: Verkle integration in reth',
-      stage: 'Breakout 1',
-      category: 'Keeping up with the protocol',
-      startTime24hr: '11:30',
-      endTime24hr: '11:45',
-      startTimeInMins: "112:20",
-      endTimeInMins: "127:28",
-      start: 0,
-      end: 0
+      "title": "Build Your Own ZK Email Proofs, ZK Email Login, or ZK Account Recovery Module in 1.5 Hours",
+      "stage": "ClassroomE",
+      "startTime24hr": "13:30",
+      "endTime24hr": "14:50",
+      "startSecs": 0,
+      "endSecs": 0
     },
     {
-      title: 'ePBS implementation in Prysm and Nimbus',
-      stage: 'Breakout 1',
-      category: 'Keeping up with the protocol',
-      startTime24hr: '13:00',
-      endTime24hr: '13:15',
-      startTimeInMins: "203:29",
-      endTimeInMins: "215:56",
-      start: 0,
-      end: 0
+      "title": "TLSNotary: Applying MPC and interactive ZK to prove web2 data",
+      "stage": "ClassroomE",
+      "startTime24hr": "16:30",
+      "endTime24hr": "16:37",
+      "startSecs": 0,
+      "endSecs": 0
+    },
+    {
+      "title": "Unlock Web2 Data with TLSNotary: Hands-On Workshop",
+      "stage": "ClassroomE",
+      "startTime24hr": "16:40",
+      "endTime24hr": "18:00",
+      "startSecs": 0,
+      "endSecs": 0
     }
   ],
-  'Classroom C': [
+  "ClassroomB": [
     {
-      title: 'RLNv2: enhanced spam protection for all peer-to-peer networks',
-      stage: 'Classroom C',
-      category: 'Products',
-      startTime24hr: '14:30',
-      endTime24hr: '15:50',
-      startTimeInMins: "301:35",
-      endTimeInMins: "353:55",
-      start: 0,
-      end: 0
+      "title": "Introducing Provable Object Data",
+      "stage": "ClassroomB",
+      "startTime24hr": "14:30",
+      "endTime24hr": "14:55",
+      "startSecs": 0,
+      "endSecs": 0
+    },
+    {
+      "title": "A Deep Dive into ZK Proofs of PODs",
+      "stage": "ClassroomB",
+      "startTime24hr": "15:00",
+      "endTime24hr": "16:20",
+      "startSecs": 0,
+      "endSecs": 0
+    },
+    {
+      "title": "Bringing AI on-chain",
+      "stage": "ClassroomB",
+      "startTime24hr": "16:30",
+      "endTime24hr": "17:50",
+      "startSecs": 0,
+      "endSecs": 0
     }
   ],
-  'Mainstage': [
+  "ClassroomA": [
     {
-      title: 'Building a future-proof L2',
-      stage: 'Mainstage',
-      category: 'Cross chain, based and preconfs',
-      startTime24hr: '13:00',
-      endTime24hr: '13:25',
-      startTimeInMins: "205:35",
-      endTimeInMins: "230:10",
-      start: 0,
-      end: 0
-    },
-    {
-      title: 'Unified Ethereum vs L2 Ecosystem Competition',
-      stage: 'Mainstage',
-      category: 'Cross chain, based and preconfs',
-      startTime24hr: '13:30',
-      endTime24hr: '14:25',
-      startTimeInMins: "235:03",
-      endTimeInMins: "291:23",
-      start: 0,
-      end: 0
-    },
-    {
-      title: 'The Future of Layer 2: Research, Development, and Next-Gen Technologies',
-      stage: 'Mainstage',
-      category: 'Keeping up with the protocol',
-      startTime24hr: '17:00',
-      endTime24hr: '17:25',
-      startTimeInMins: "444:17",
-      endTimeInMins: "469:50",
-      start: 0,
-      end: 0
-    },
-    {
-      title: 'Defragmenting Ethereum - Interoperability and the Superchain',
-      stage: 'Mainstage',
-      category: 'Keeping up with the protocol',
-      startTime24hr: '18:00',
-      endTime24hr: '18:25',
-      startTimeInMins: "504:09",
-      endTimeInMins: "529:40",
-      start: 0,
-      end: 0
-    }
-  ],
-  'Breakout 3': [
-    {
-      title: 'BuidlGuidl CTF - Capture the Flag game',
-      stage: 'Breakout 3',
-      category: 'Security and Auditing (fun and hard)',
-      startTime24hr: '14:30',
-      endTime24hr: '17:30',
-      indexingFail: 'sessionChanged',
-      startTimeInMins: "",
-      endTimeInMins: "",
-      start: 0,
-      end: 0
+      "title": "Simulating Economic Systems of an Autonomous World",
+      "stage": "ClassroomA",
+      "startTime24hr": "16:50",
+      "endTime24hr": "17:15",
+      "startSecs": 0,
+      "endSecs": 0
     }
   ]
 }
 
-export { files, day2 };
+export { files, day3 };
